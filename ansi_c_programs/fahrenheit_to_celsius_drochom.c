@@ -5,7 +5,9 @@ float celsius_to_fahrenheit(float f) {
 }
 
 int main() {
+  // Exercise 1-3. Modify the temperature conversion program to print a heading above the table.
+  printf("     Celsius  Fahrenheit\n");
 	for (int i=0;i<=15;i++) {
-    printf("%d\t%d\n", i * 20, (int)celsius_to_fahrenheit(i*20));
+    printf("%12d%12.1f\n", i * 20, celsius_to_fahrenheit(i*20));
   }
 }
